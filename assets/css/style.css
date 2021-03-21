@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+.svg-top{
+    position: fixed;
+    top: -489px;
+    left: -100px;
+}
+.svg-bottom{
+    position: fixed;
+    bottom: -489px;
+    right: -150px;
+}
+.card{
+    width: 350px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+}
+.card-top svg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(0, 0%, 59%);
+}
+.card-photo img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-top: -60px;
+}
+.card-profile-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-profile-text-top{
+    margin-top: 15px;
+    color: hsl(227, 10%, 46%);
+}
+.card-profile-text-top span{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-right: 15px;
+}
+.card-profile-text-bottom{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 59%);
+}
+.card-bottom{
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-around;
+}
+.card-profile-info{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-profile-info-top{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 5px;
+}
+.card-profile-info-bottom{
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
