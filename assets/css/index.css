@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
 /* Global */
 
 * {
@@ -7,122 +10,20 @@
   }
   
   body {
-    background-color: #000;
-  }
-  
-  /* Galeria */
-  
-  .gallery {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 90%;
-    max-height: 28vw;
-    overflow: hidden;
-  }
-  
-  .gallery__stream {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100%;
-  }
-  
-  .gallery__item {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    transition: 1s all ease;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 5px;
+    background-color: #3379C2;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1316%26quot%3b)' fill='none'%3e%3cpath d='M -1278.5741091698499%2c72 C -1134.57%2c135.6 -846.57%2c356 -558.5741091698499%2c390 C -270.57%2c424 -126.57%2c245.8 161.42589083015014%2c242 C 449.43%2c238.2 625.71%2c408.2 881.4258908301501%2c371 C 1137.14%2c333.8 1328.29%2c119 1440%2c56' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -238.29268120304368%2c90 C -94.29%2c145.6 193.71%2c372.8 481.7073187969563%2c368 C 769.71%2c363.2 913.71%2c38.6 1201.7073187969563%2c66 C 1489.71%2c93.4 1874.05%2c469.8 1921.7073187969563%2c505 C 1969.37%2c540.2 1536.34%2c294.6 1440%2c242' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -354.40440630623453%2c119 C -210.4%2c163.8 77.6%2c339.4 365.59559369376547%2c343 C 653.6%2c346.6 797.6%2c135.6 1085.5955936937655%2c137 C 1373.6%2c138.4 1734.71%2c332 1805.5955936937655%2c350 C 1876.48%2c368 1513.12%2c251.6 1440%2c227' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -381.9226555952431%2c126 C -237.92%2c172.6 50.08%2c332.8 338.0773444047569%2c359 C 626.08%2c385.2 770.08%2c270.6 1058.0773444047568%2c257 C 1346.08%2c243.4 1701.69%2c299.8 1778.0773444047568%2c291 C 1854.46%2c282.2 1507.62%2c228.6 1440%2c213' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -354.8730559861972%2c204 C -210.87%2c257.8 77.13%2c485.2 365.1269440138028%2c473 C 653.13%2c460.8 797.13%2c161.8 1085.1269440138028%2c143 C 1373.13%2c124.2 1734.15%2c402.6 1805.1269440138028%2c379 C 1876.1%2c355.4 1513.03%2c95.8 1440%2c25' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1153.419714572197%2c284 C -1009.42%2c235.8 -721.42%2c-7.8 -433.4197145721971%2c43 C -145.42%2c93.8 -1.42%2c495.4 286.5802854278029%2c538 C 574.58%2c580.6 775.9%2c293.4 1006.5802854278029%2c256 C 1237.26%2c218.6 1353.32%2c332 1440%2c351' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -546.9908011905897%2c514 C -402.99%2c462.4 -114.99%2c254 173.00919880941038%2c256 C 461.01%2c258 605.01%2c524.2 893.0091988094103%2c524 C 1181.01%2c523.8 1503.61%2c273.6 1613.0091988094105%2c255 C 1722.41%2c236.4 1474.6%2c395.8 1440%2c431' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -733.3741433565151%2c248 C -589.37%2c280.8 -301.37%2c435 -13.374143356515145%2c412 C 274.63%2c389 418.63%2c133.2 706.6258566434849%2c133 C 994.63%2c132.8 1279.95%2c387.6 1426.625856643485%2c411 C 1573.3%2c434.4 1437.33%2c282.2 1440%2c250' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -891.5396008956895%2c224 C -747.54%2c251.2 -459.54%2c374.4 -171.5396008956895%2c360 C 116.46%2c345.6 260.46%2c166.4 548.4603991043105%2c152 C 836.46%2c137.6 1090.15%2c309.4 1268.4603991043105%2c288 C 1446.77%2c266.6 1405.69%2c93.6 1440%2c45' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -793.7288603076066%2c58 C -649.73%2c125 -361.73%2c395 -73.72886030760662%2c393 C 214.27%2c391 358.27%2c26.2 646.2711396923934%2c48 C 934.27%2c69.8 1207.53%2c478.8 1366.2711396923933%2c502 C 1525.02%2c525.2 1425.25%2c231.6 1440%2c164' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1316'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    font-family: 'Aboreto', cursive;
   }
 
-  /* Itens */
-
-.gallery__item:nth-child(1) {
-    left: 0;
-    z-index: 1;
-    transform: translateX(-100%) scale(.8);
+  header {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
   }
-  
-  .gallery__item:nth-child(2) {
-    left: 0;
-    z-index: 2;
-    transform: translateX(-50%) scale(.8);
-  }
-  
-  .gallery__item:nth-child(3) {
-    left: 50%;
-    z-index: 4;
-    transform: translateX(-50%) scale(1);
-  }
-  
-  .gallery__item:nth-child(4) {
-    left: 100%;
-    z-index: 2;
-    transform: translateX(-50%) scale(.8);
-  }
-  
-  .gallery__item:nth-child(n+5) {
-    left: 100%;
-    z-index: 1;
-    transform: scale(.8);
-  }
-
-  /* Backgrounds */
-
-.bg-1 {
-    background-image: url("../images/cardPreview.jpg");
-  }
-  
-  .bg-2 {
-    background-image: url("../images/productPreview.jpg");
-  }
-
-  /* Controles */
-
-.gallery__prev,
-.gallery__next {
-  position: absolute;
-  top: 50%;
-  z-index: 4;
-  width: 50%;
-  height: 100%;
-  transform: translateX(-50%) translateY(-50%) scale(.8);
-  cursor: pointer;
-}
-
-.gallery__prev {
-  left: 0;
-}
-
-.gallery__next {
-  left: 100%;
-}
-
-/* Sombras */
-
-.gallery:before,
-.gallery:after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 20%;
-  height: 100%;
-  z-index: 3;
-}
-
-.gallery:before {
-  left: 0;
-  background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
-
-.gallery:after {
-  right: 0;
-  background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
